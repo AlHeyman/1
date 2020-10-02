@@ -1,0 +1,6 @@
+fun maim (){
+var str = readLine().toString()
+var rts = str.reversed()
+println(rts)
+
+}
