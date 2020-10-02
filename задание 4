@@ -1,0 +1,14 @@
+fun main() {
+var mass = listOf(-4,-5,4,-12,-20)
+var sum = 0
+for (i in mass){
+    if (i < 0){
+        if(i % 4 == 0){
+            sum = sum + i
+        }
+    }
+
+}
+println(sum)
+
+}
