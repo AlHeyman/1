@@ -1,0 +1,29 @@
+fun main () {
+val f = 2345//придуманное число
+    val s = readLine().toString().toInt()//введенное число
+
+    var B = 0
+    var K = 0
+
+    val oooo = f / 1000
+    var ooo = f % 10
+    var oo = f % 100 / 10
+    var o = f % 1000 / 100
+
+
+
+    if (oooo == s / 1000) B+=1
+    else if (oooo == s % 10|| oooo == s % 100 / 10||oooo ==s % 1000 / 100 ) K+=1
+
+    if (ooo == s % 10 ) B+=1
+    else if (ooo == s / 1000 || ooo == s % 100 / 10||ooo ==s % 1000 / 100 ) K+=1
+
+    if (oo == s % 100 / 10) B+=1
+    else if (oo == s % 10|| oo == s / 1000 ||oo ==s % 1000 / 100 ) K+=1
+
+    if (o == s % 1000 / 100) B+=1
+    else if (o == s % 10|| o == s / 1000 ||o ==s % 100 / 10 ) K+=1
+
+println( B )
+    println (K)
+}
