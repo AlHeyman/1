@@ -1,0 +1,12 @@
+fum main () {
+println("Введите строку")
+var str = readLine().toString().split(" ")
+println("Введите подстроку")
+var undrstrng = readLine().toString()
+var c = 0
+for (i in str){
+    if (i.contains(undrstrng)){
+        c +=1
+    }
+}
+}
